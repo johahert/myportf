@@ -1,0 +1,26 @@
+.text-animate{
+    display: inline-block;
+    opacity: 0;
+    animation: fadeIn 1s 1s;
+    
+    min-width: 10px;
+    animation-fill-mode: forwards;
+   
+}
+.text-animate-hover{
+    display: inline-block;
+    min-width: 10px;
+    animation-fill-mode: both;
+    
+    &:hover{
+        animation: jello 1s;
+        
+        cursor: pointer;
+    }
+
+}
+@for $i from 1 through 40 {
+    .text-animate._#{$i} {
+        animation-delay: 0.1s * $i;
+    }
+}

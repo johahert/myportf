@@ -1,0 +1,17 @@
+.bouncing
+{
+    span{
+        display: flex;
+        align-items: center;
+    }
+    &:hover{
+
+        span:not(.noAnim){
+            animation: tada 1.5s infinite;
+            
+            
+        }
+       
+    }
+
+}
