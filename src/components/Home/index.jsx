@@ -21,11 +21,11 @@ const Home = () =>{
     return (
         <>
             <div className=' textzone text-center  flex flex-col min-h-dvh items-center justify-center'>
-            <h1 className='text-white kallisto tracking-wide uppercase animate__animated animate__fadeInUp animate__slow'>
+            <h1 className='text-white kallisto tracking-wide uppercase animate__animated animate__fadeInUp text-3xl font-extrabold animate__slow'>
             <AnimatedLetters addClass={'hover:text-gray-400 z-index-10'} letterClass={letterClass} strArray={nameArray} idx={2} />
                 
             </h1>
-            <h2 className='font-bold kallisto uppercase text-2xl text-teal-100 animate__delay-1s animate__animated animate__fadeIn'>
+            <h2 className='font-bold kallisto uppercase text-xl text-teal-100 animate__delay-1s animate__animated animate__fadeIn'>
             <AnimatedLetters addClass={'hover:text-white'} letterClass={letterClass} strArray={jobArray} idx={9} />
             </h2>
             <div className='w-36 py-10'>
